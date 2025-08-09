@@ -7,8 +7,8 @@ def combine_basic_data():
     into a single file with a specific column structure.
     """
     # Define the input folder and the final output filename
-    input_folder = 'final_data_with_target'
-    output_filename = 'basic_data_combined.csv'
+    input_folder = 'data_with_squared_margin_basic'
+    output_filename = 'DataNoPopulationRegr2.csv'
 
     # Get the path to the directory where the script is running
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +23,7 @@ def combine_basic_data():
     # Define the specific columns you want in the final output
     final_columns = [
         "WarNumber", "Timestamp", "WardenCaptures", "ColonialCaptures", "WardenCasualties", 
-        "ColonialCasualties", "WardenCasualtyRate", "ColonialCasualityRate", "SteamPlayers", "Target"
+        "ColonialCasualties", "WardenCasualtyRate", "ColonialCasualityRate", "SteamPlayers", "SquaredWinMargin"
     ]
     
     # Define the two separate ranges of wars to process

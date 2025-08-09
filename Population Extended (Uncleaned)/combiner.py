@@ -7,8 +7,8 @@ def combine_extended_data():
     into a single file with a specific column structure.
     """
     # Define the input folder and the final output filename
-    input_folder = 'final_data_with_target'
-    output_filename = 'extended_data_combined.csv'
+    input_folder = 'data_with_win_margin'
+    output_filename = 'DataWithPopulationRegr.csv'
 
     # Get the path to the directory where the script is running
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -25,7 +25,7 @@ def combine_extended_data():
     final_columns = [
         "WarNumber", "Timestamp", "WardenPlayers", "ColonialPlayers", "WardenCaptures", "ColonialCaptures",
         "WardenCasualties", "ColonialCasualties", "WardenCasualtyRate", "ColonialCasualtyRate",
-        "SteamPlayers", "WardenPlayHours", "ColonialPlayHours", "Target"
+        "SteamPlayers", "WardenPlayHours", "ColonialPlayHours", "WinMargin"
     ]
 
     # Create a list to hold the DataFrame from each war file
